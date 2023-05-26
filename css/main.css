@@ -461,6 +461,93 @@ body {
   }
 }
 
+/* COMPLEX GRID */
+@media (max-width: 1375px) {
+  .complex-grid__content {
+    padding-top: 70px;
+  }
+}
+.complex-grid__content .complex-grid__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 23% 10% 33% 11% 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+@media (max-width: 767.98px) {
+  .complex-grid__content .complex-grid__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 412px) {
+  .complex-grid__content .complex-grid__grid {
+    grid-template-columns: 1fr;
+  }
+}
+.complex-grid__content .complex-grid__grid .grid__item3 {
+  width: 90%;
+  height: auto;
+  grid-column: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.complex-grid__content .complex-grid__grid .grid__item2 {
+  width: 90%;
+  height: auto;
+  grid-column: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.complex-grid__content .complex-grid__grid .grid__item1 {
+  width: 90%;
+  height: auto;
+  grid-row: 3;
+}
+.complex-grid__content .complex-grid__grid .grid__item4 {
+  width: 90%;
+  height: auto;
+  grid-column: 3;
+  grid-row: 3;
+}
+.complex-grid__content .complex-grid__grid .grid__item5 {
+  width: 90%;
+  height: auto;
+  grid-row: 5;
+}
+@media (max-width: 767.98px) {
+  .complex-grid__content .complex-grid__grid .grid__item1 {
+    width: 70%;
+    height: auto;
+    grid-row: 3;
+  }
+  .complex-grid__content .complex-grid__grid .grid__item3 {
+    width: 70%;
+    height: auto;
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .complex-grid__content .complex-grid__grid .grid__item2 {
+    width: 70%;
+    grid-column: 2;
+    grid-row: 5;
+  }
+  .complex-grid__content .complex-grid__grid .grid__item4 {
+    width: 90%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .complex-grid__content .complex-grid__grid .grid__item5 {
+    width: 90%;
+    height: auto;
+    grid-row: 5;
+  }
+}
+
+/* COMPLEX GRID */
 /* SUBSCRIBE */
 .subscribe {
   min-height: 953px;
